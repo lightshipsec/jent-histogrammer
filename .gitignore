@@ -1,0 +1,4 @@
+**/dist
+bcarm.data
+**/*.egg-info
+**/__pycache__

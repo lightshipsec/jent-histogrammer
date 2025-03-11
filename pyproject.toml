@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[project]
+name = "jent-histogrammer"
+dynamic = ["version"]
+description = "Read and create histogram of entropy samples"
+readme = "README.md"
+authors = [{ name = "Alex Thurston", email = "alex.thurston@lightshipsec.com" }]
+dependencies = [
+    "numpy",
+    "halo",
+    "matplotlib"
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/lightshipsec/jent-histogrammer"
+Repository = "https://github.com/lightshipsec/jent-histogrammer"
+Issues = "https://github.com/lightshipsec/jent-histogrammer/issues"
+
+[project.scripts]
+jent-histogrammer = "jent:main"
+
+
