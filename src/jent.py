@@ -25,7 +25,7 @@ Upper: {upper_limit}
 Bin Width: {bin_width}
 Sample: {data.size}'''
 
-    plt.figtext(0.15, 0.75, legend_text, fontsize=6, bbox=dict(facecolor='lightgray', alpha=0.5))
+    plt.figtext(0.85, 0.9, legend_text, fontsize=6, bbox=dict(facecolor='lightgray', alpha=0.5))
 
     plt.hist(data,
             bins=range(lower_limit, upper_limit, bin_width),
